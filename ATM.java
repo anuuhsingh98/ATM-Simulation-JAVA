@@ -29,13 +29,13 @@ class ATM {
             } else {
                 attempts++;
                 if (attempts < 3) {
-                    System.out.println("Wrong Pin.... Attempts left"+(3-attempts));
+                    System.out.println("Wrong Pin.... Attempts left" + (3 - attempts));
                 }
             }
-            if(!success){
-                System.out.println("Too many wrong attempts.... Try again after 24 hours");
-                System.exit(0);
-            }
+        }
+        if (!success) {
+            System.out.println("Too many wrong attempts.... Try again after 24 hours");
+            System.exit(0);
         }
     }
 
